@@ -1,0 +1,78 @@
+/*Globals*/
+@mixin transition ($timer, $ease) {
+    -o-transition:$timer ease-out $ease;
+    -ms-transition: $timer ease-out $ease;
+    -moz-transition: $timer ease-out $ease;
+    -webkit-transition: $timer ease-out $ease;
+    transition: $timer ease-out $ease;
+}
+
+/*Container & background*/
+
+body {
+    background-color: #78ECC1;
+    padding: 0 5% 0 5%;
+}
+
+.container {
+  font-family: 'Questrial';
+  color: #CCF7E7;
+  width: 100%;
+  }
+
+  /*Header*/
+
+  h1, .subheader, ul {
+    font-size: 10em;
+    margin-top: 5%;
+  }
+
+  .subheader {
+    font-size: 2em;
+  }
+
+  h1:hover, .subheader:hover, li:hover {
+    color: #fff;
+    @include transition(0.5s, 0);
+  }
+
+  #content {
+    width:75%;
+    float: left;
+  }
+
+  /*Nav Bar*/
+
+ul {
+  font-size: 1.3em;
+  list-style: none;
+  line-height: 3.8em;
+  text-align: left;
+  float: right;
+  width: 15%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+li a {
+  font-family: 'Raleway';
+  text-decoration: none;
+  color: #fff;
+  @include transition(0, 0.1s);
+}
+
+li a:hover, .active {
+  color: #FFF;
+  @include transition(0, 0.1s);
+   border-bottom: thick solid #fff;
+   padding-bottom: 0.5em;
+}
+
+/*Skills Container*/
+
+.skillscontainer {
+
+}
+
+
