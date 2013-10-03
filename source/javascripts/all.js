@@ -21,12 +21,4 @@ $(document).ready(function() {
     activeClass(this);
     return false;
   });
-
-  // $('.photo img').mouseover(function() {
-  //     $(this).empty();
-  //     $(this).attr('src', 'images/Andrea.png');
-  //     $(this).mouseleave(function() {
-  //       $(this).attr('src', 'images/Andrea1.png');
-  //     })
-  // })
 });
