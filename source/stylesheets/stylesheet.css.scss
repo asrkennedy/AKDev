@@ -134,6 +134,9 @@ a {
   line-height: 1.5em;
   font-size: 1.2em;
   color: #61BF9C;
+  ul {
+    text-align: left;
+  }
 }
 
 /*Projects Glass*/
@@ -183,6 +186,8 @@ a {
     width: 100%;
   }
 }
+
+/*Media Queries*/
 
 @media all and (max-width: 1081px) and (min-width: 857px) {
   h1 {

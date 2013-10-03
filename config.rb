@@ -60,6 +60,20 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+
+    if ENV.include?('DEPLOY')
+    activate :s3_deploy do |s3|
+      s3.access_key_id = ENV['AWS_ACCESS_KEY_ID']
+      s3.secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
+      s3.bucket = ENV['AWS_S3_BUCKET']
+    end
+    activate :invalidate_cloudfront do |cf|
+      cf.access_key_id = ENV['AWS_ACCESS_KEY_ID']
+      cf.secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
+      cf.distribution_id = ENV['AWS_CLOUDFRONT_DIST_ID']
+    end
+  end
+
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
