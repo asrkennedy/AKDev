@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('.active').removeClass();
     $(obj).addClass('active');
     console.log(obj)
-  }
+  };
 
   $('.nav li a').click(function() {
     var page = $(this).attr('href');
@@ -21,4 +21,5 @@ $(document).ready(function() {
     activeClass(this);
     return false;
   });
+
 });

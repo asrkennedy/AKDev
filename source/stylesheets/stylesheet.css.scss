@@ -16,9 +16,9 @@ body {
 
 a {
   text-decoration: none;
-  color: #FF87A1;
+  color: #61BF9C;
   &:hover {
-    color: #FF5F82;
+    color: #FFA5B8;
   }
 }
 
@@ -107,11 +107,28 @@ a {
   filter: blur(5px);
 }
 
+/*About Glass*/
+
+#about {
+  text-align: left;
+  font-size: 1.1em;
+  padding: 3% 3%;
+  width: 55%;
+  color: #61BF9C;
+  a {
+    color: #fff;
+    &:hover {
+      color: #FFA5B8;
+    }
+  }
+}
+
 /*Skills Glass*/
 
-.skills {
+#skills {
   line-height: 1.5em;
   font-size: 1.2em;
+  color: #61BF9C;
 }
 
 /*Projects Glass*/
@@ -133,14 +150,18 @@ a {
 
 /*Contact Glass*/
 
-.contact {
+#contact {
   margin-top: 20%;
-  text-align: justify;
+  text-align: left;
   margin-left: 17%;
+  position: relative;
   padding: 3% 0;
-  a {
-    margin-left: 10%;
-  }
+}
+
+.contact_inner {
+  width: 23.5%;
+  display: inline-block;
+  text-align: center;
 }
 
 /*Photo*/
@@ -153,5 +174,12 @@ a {
     border-bottom: thick solid #000;
     width: 100%;
   }
+}
+
+@media all and (max-width: 1100px) and (min-width: 200px) {
+  h1 {
+    font-size: 400%;
+  }
+
 }
 
