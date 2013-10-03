@@ -8,6 +8,7 @@ gem "slim"
 gem "sass"
 gem "better_errors"
 gem "binding_of_caller"
+gem "middleman-sync", "~> 3.0.12"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"

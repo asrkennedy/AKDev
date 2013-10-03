@@ -61,17 +61,17 @@ set :images_dir, 'images'
 # Build-specific configuration
 configure :build do
 
-    if ENV.include?('DEPLOY')
-    activate :s3_deploy do |s3|
-      s3.access_key_id = ENV['AWS_ACCESS_KEY_ID']
-      s3.secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
-      s3.bucket = ENV['AWS_S3_BUCKET']
-    end
-    activate :invalidate_cloudfront do |cf|
-      cf.access_key_id = ENV['AWS_ACCESS_KEY_ID']
-      cf.secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
-      cf.distribution_id = ENV['AWS_CLOUDFRONT_DIST_ID']
-    end
+  activate :sync do |sync|
+    sync.fog_provider = 'AWS' # Your storage provider
+    sync.fog_directory = 'welosttherobots.com' # Your bucket name
+    sync.fog_region = 'us-east-1' # The region your storage bucket is in (eg us-east-1, us-west-1, eu-west-1, ap-southeast-1 )
+    sync.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']# Your Amazon S3 access key
+    sync.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY'] # Your Amazon S3 access secret
+    sync.existing_remote_files = 'keep' # What to do with your existing remote files? ( keep or delete )
+    # sync.gzip_compression = false # Automatically replace files with their equivalent gzip compressed version
+    # sync.after_build = false # Disable sync to run after Middleman build ( defaults to true )
+  end
+
   end
 
   # For example, change the Compass output style for deployment
