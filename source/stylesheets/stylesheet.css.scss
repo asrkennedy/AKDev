@@ -205,10 +205,10 @@ a {
     line-height: 120%;
     }
   }
-    span {
-      font-size: 90%;
-      line-height: 120%;
-    }
+  span {
+    font-size: 90%;
+    line-height: 120%;
+  }
 }
 
 @media all and (max-width: 857px) and (min-width: 640px) {
@@ -239,10 +239,10 @@ a {
   span {
     font-size: 90%;
   }
-#about {
-  min-width: 342px;
-  line-height: 100%;
-}
+  #about {
+    min-width: 342px;
+    line-height: 100%;
+  }
 }
 
 @media all and (max-width: 640px) and (min-width: 200px) {
@@ -255,10 +255,10 @@ a {
     .subheader {
     font-size: 100%;
   }
-li {
-    font-size: 70%;
-    line-height: 240%;
-  }
+  li {
+      font-size: 70%;
+      line-height: 240%;
+    }
   .nav {
     padding-right: 5%
   }
