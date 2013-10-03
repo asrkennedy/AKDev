@@ -72,8 +72,6 @@ configure :build do
     # sync.after_build = false # Disable sync to run after Middleman build ( defaults to true )
   end
 
-  end
-
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
