@@ -10,6 +10,8 @@ activate :directory_indexes
 
 set :relative_links, true
 
+set :layout, false
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -36,7 +38,7 @@ set :relative_links, true
 ###
 
 # Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
+activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
 activate :livereload
@@ -47,7 +49,6 @@ activate :livereload
 #     "Helping"
 #   end
 # end
-set :layout, false
 
 require 'slim'
 

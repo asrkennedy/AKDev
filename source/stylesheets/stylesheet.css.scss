@@ -14,65 +14,144 @@ body {
     padding: 0 5% 0 5%;
 }
 
+a {
+  text-decoration: none;
+  color: #FF87A1;
+  &:hover {
+    color: #FF5F82;
+  }
+}
+
 .container {
   font-family: 'Questrial';
-  color: #CCF7E7;
+/*  color: #CCF7E7;*/
+  color: #FFF;
   width: 100%;
   }
 
   /*Header*/
 
-  h1, .subheader, ul {
+  h1, .subheader, .nav {
     font-size: 10em;
     margin-top: 5%;
+    margin-bottom: 0;
+    margin-left: 1%;
   }
 
   .subheader {
     font-size: 2em;
   }
 
-  h1:hover, .subheader:hover, li:hover {
-    color: #fff;
-    @include transition(0.5s, 0);
-  }
-
   #content {
-    width:75%;
-    float: left;
+    width:85%;
   }
 
   /*Nav Bar*/
 
-ul {
+.nav {
   font-size: 1.3em;
   list-style: none;
   line-height: 3.8em;
   text-align: left;
-  float: right;
   width: 15%;
   position: fixed;
   top: 0;
   right: 0;
+  li a {
+    color: #FFF;
+    font-family: 'Raleway';
+    text-decoration: none;
+    /*@include transition(0, 0.8s);*/
+  }
+  li a:hover, .active {
+    color: #FFF;
+    /*@include transition(0, 0.1s);*/
+     border-bottom: thick solid #fff;
+     padding-bottom: 0.5em;
+  }
 }
 
-li a {
-  font-family: 'Raleway';
-  text-decoration: none;
-  color: #fff;
-  @include transition(0, 0.1s);
+/*Glass Effect*/
+
+.glass {
+  position: relative;
+  padding: 3% 5%;
+  border-bottom: 1px solid;
+  border-bottom-color: #ccc;
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 50%;
+  font-size: 1.3em;
+  line-height: 1.4em;
+  text-align: justify;
+  text-justify: distribute;
+  border-radius: 2%;
+  display: inline-block;
 }
 
-li a:hover, .active {
-  color: #FFF;
-  @include transition(0, 0.1s);
-   border-bottom: thick solid #fff;
-   padding-bottom: 0.5em;
+.glass::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #78ECC1;
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  content: "";
+  filter: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22blur%22%3E%3CfeGaussianBlur%20stdDeviation%3D%225%22%2F%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3C%2Fsvg%3E#blur");
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
 }
 
-/*Skills Container*/
+/*Skills Glass*/
 
-.skillscontainer {
-
+.skills {
+  line-height: 1.5em;
+  font-size: 1.2em;
 }
 
+/*Projects Glass*/
+
+.projects {
+  width: 35%;
+  display: inline-table;
+  text-align: center;
+  margin: 1%;
+  padding: 3% 4%;
+  a img {
+    padding-top: 5%;
+    width: 100%;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+/*Contact Glass*/
+
+.contact {
+  margin-top: 20%;
+  text-align: justify;
+  margin-left: 17%;
+  padding: 3% 0;
+  a {
+    margin-left: 10%;
+  }
+}
+
+/*Photo*/
+
+.photo {
+  /*display: inline-block;*/
+  /*margin-left: 5%;*/
+  img {
+    /*margin-bottom: -15%;*/
+    border-bottom: thick solid #000;
+    width: 100%;
+  }
+}
 
