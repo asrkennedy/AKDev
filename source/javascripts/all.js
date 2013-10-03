@@ -22,4 +22,16 @@ $(document).ready(function() {
     return false;
   });
 
+
+  $('body').on({
+    mouseenter: function() {
+    var image = $(this).attr("src").replace(".png", "_pink.png");
+    $(this).attr('src', image);
+    },
+    mouseleave: function() {
+      var image = $(this).attr("src").replace("_pink.png", ".png");
+      $(this).attr('src', image);
+    }
+  },  '.icon');
+
 });
