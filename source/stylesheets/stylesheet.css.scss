@@ -31,6 +31,11 @@ a {
 
   /*Header*/
 
+  .categories {
+    text-align: center;
+    width: 60%;
+  }
+
   h1, .subheader, .nav {
     font-size: 10em;
     margin-top: 5%;
@@ -97,7 +102,7 @@ a {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-color: #78ECC1;
+  background-color: transparent;
   background-position: center bottom;
   background-attachment: fixed;
   background-size: cover;
@@ -170,8 +175,8 @@ a {
 /*Photo*/
 
 .photo {
-  /*display: inline-block;*/
-  /*margin-left: 5%;*/
+  display: inline;
+  margin-left: -5%;
   img {
     /*margin-bottom: -15%;*/
     border-bottom: thick solid #000;
@@ -179,10 +184,114 @@ a {
   }
 }
 
-@media all and (max-width: 1100px) and (min-width: 200px) {
+@media all and (max-width: 1081px) and (min-width: 857px) {
   h1 {
-    font-size: 400%;
+    font-size: 800%;
   }
-
+  .subheader {
+    font-size: 200%;
+  }
+  li {
+    font-size: 90%;
+    line-height: 300%;
+  }
+  #skills {
+    ul {
+      -webkit-padding-start: 5%;
+      text-align: left;
+      }
+    li {
+    font-size: 90%;
+    line-height: 120%;
+    }
+  }
+    span {
+      font-size: 90%;
+      line-height: 120%;
+    }
 }
 
+@media all and (max-width: 857px) and (min-width: 640px) {
+  h1 {
+    font-size: 600%;
+    max-width: 728px;
+  }
+  .subheader {
+    font-size: 150%;
+  }
+  li {
+    font-size: 80%;
+    line-height: 300%;
+  }
+  #about{
+    font-size: 120%;
+  }
+  #skills {
+    ul {
+      -webkit-padding-start: 5%;
+      text-align: left;
+      }
+    li {
+    font-size: 80%;
+    line-height: 120%;
+    }
+  }
+  span {
+    font-size: 90%;
+  }
+#about {
+  min-width: 342px;
+  line-height: 100%;
+}
+}
+
+@media all and (max-width: 640px) and (min-width: 200px) {
+  h1 {
+    font-size: 320%;
+  }
+  #home {
+        max-width: 390px;
+  }
+    .subheader {
+    font-size: 100%;
+  }
+li {
+    font-size: 70%;
+    line-height: 240%;
+  }
+  .nav {
+    padding-right: 5%
+  }
+  #skills {
+    min-width: 55%;
+    ul {
+      -webkit-padding-start: 5%;
+      text-align: left;
+      }
+    li {
+    font-size: 60%;
+    line-height: 120%;
+    }
+  }
+  span {
+    font-size: 60%;
+  }
+  #about {
+    line-height: 70%;
+  }
+}
+
+@media all and (max-width: 455px) {
+  .projects a img {
+    max-width: 106px;
+    max-height: 66px;
+  }
+  .categories {
+    text-align: center;
+    margin:auto;
+    padding-right: 10%;
+  }
+  #about {
+    width: 85%;
+  }
+}
