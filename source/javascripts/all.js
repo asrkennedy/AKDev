@@ -33,5 +33,4 @@ $(document).ready(function() {
       $(this).attr('src', image);
     }
   },  '.icon');
-
 });

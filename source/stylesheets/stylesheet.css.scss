@@ -12,6 +12,7 @@
 body {
     background-color: #78ECC1;
     padding: 0 5% 0 5%;
+    font-size: 100%;
 }
 
 a {
@@ -142,6 +143,7 @@ a {
 /*Projects Glass*/
 
 .projects {
+  font-size: 100%;
   width: 35%;
   display: inline-table;
   text-align: center;
@@ -159,6 +161,7 @@ a {
 /*Contact Glass*/
 
 #contact {
+  font-size: 100%;
   margin-top: 5%;
   text-align: left;
   margin-left: 17%;
@@ -214,6 +217,9 @@ a {
     font-size: 90%;
     line-height: 120%;
   }
+  #contact {
+    width: 60%;
+  }
 }
 
 @media all and (max-width: 857px) and (min-width: 640px) {
@@ -247,6 +253,12 @@ a {
   #about {
     min-width: 342px;
     line-height: 100%;
+  }
+      #contact {
+    width: 60%;
+  }
+  .contact_inner {
+    font-size: 0.8em;
   }
 }
 
@@ -284,6 +296,13 @@ a {
   #about {
     line-height: 70%;
   }
+    #contact {
+    width: 70%;
+    margin-left: 0;
+  }
+  .contact_inner {
+    font-size: 0.8em;
+  }
 }
 
 @media all and (max-width: 455px) {
@@ -295,8 +314,16 @@ a {
     text-align: center;
     margin:auto;
     padding-right: 10%;
+    margin-left: 0;
   }
   #about {
     width: 85%;
+  }
+  #contact {
+    width: 70%;
+    margin-left: 0;
+  }
+  .contact_inner {
+    font-size: 0.8em;
   }
 }
