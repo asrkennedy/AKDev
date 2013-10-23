@@ -2,6 +2,10 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
+ruby '2.0.0'
+
+gem "rack-contrib"
+gem "puma"
 gem "middleman", "~>3.1.5"
 gem "haml"
 gem "slim"

@@ -101,7 +101,11 @@ GEM
     net-ssh (2.7.0)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
+    puma (2.6.0)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-livereload (0.3.15)
       rack
     rack-test (0.6.2)
@@ -144,6 +148,8 @@ DEPENDENCIES
   middleman (~> 3.1.5)
   middleman-livereload (~> 3.1.0)
   middleman-sync (~> 3.0.12)
+  puma
+  rack-contrib
   ruby18_source_location
   sass
   slim
