@@ -6,7 +6,8 @@
 # compass_config do |config|
 #   config.output_style = :compact
 # end
-activate :directory_indexes
+
+activate :relative_assets
 
 set :relative_links, true
 
