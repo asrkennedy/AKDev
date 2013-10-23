@@ -76,6 +76,13 @@ configure :build do
     # sync.after_build = false # Disable sync to run after Middleman build ( defaults to true )
   end
 
+  activate :deploy do |deploy|
+  deploy.method = :git
+  # Optional Settings
+  # deploy.remote = "custom-remote" # remote name or git url, default: origin
+  # deploy.branch = "custom-branch" # default: gh-pages
+end
+
   # For example, change the Compass output style for deployment
   # activate :minify_css
 

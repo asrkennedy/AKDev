@@ -6,6 +6,7 @@ ruby '2.0.0'
 
 gem "rack-contrib"
 gem "puma"
+
 gem "middleman", "~>3.1.5"
 gem "haml"
 gem "slim"
@@ -13,6 +14,8 @@ gem "sass"
 gem "better_errors"
 gem "binding_of_caller"
 gem "middleman-sync", "~> 3.0.12"
+
+gem "middleman-deploy"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
