@@ -10,14 +10,14 @@
 /*Container & background*/
 
 body {
-    background-color: #78ECC1;
+    background-color: #0097DA;
     padding: 0 5% 0 5%;
     font-size: 100%;
 }
 
 a {
   text-decoration: none;
-  color: #61BF9C;
+  color: #FFFFFF;
   &:hover {
     color: #FFA5B8;
   }
@@ -120,7 +120,7 @@ a {
   font-size: 1.3em;
   padding: 3% 3%;
   width: 55%;
-  color: #61BF9C;
+  color: #FFFFFF;
   a {
     color: #fff;
     &:hover {
@@ -134,7 +134,7 @@ a {
 #skills {
   line-height: 1.5em;
   font-size: 1.2em;
-  color: #61BF9C;
+  color: #FFFFFF;
   ul {
     text-align: left;
   }

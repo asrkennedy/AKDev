@@ -76,11 +76,18 @@ configure :build do
     # sync.after_build = false # Disable sync to run after Middleman build ( defaults to true )
   end
 
-  activate :deploy do |deploy|
-  deploy.method = :git
-  # Optional Settings
-  # deploy.remote = "custom-remote" # remote name or git url, default: origin
-  # deploy.branch = "custom-branch" # default: gh-pages
+
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  # host and path *must* be set
+  deploy.host = "www.welosttherobots.com"
+  deploy.path = "/srv/www/site"
+  # user is optional (no default)
+  deploy.user = "asrkennedy"
+  # port is optional (default is 22)
+  deploy.port  = 22
+  # clean is optional (default is false)
+  deploy.clean = true
 end
 
   # For example, change the Compass output style for deployment
