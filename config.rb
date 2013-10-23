@@ -77,6 +77,7 @@ configure :build do
     # sync.after_build = false # Disable sync to run after Middleman build ( defaults to true )
   end
 
+activate :favicon_maker
 
 activate :deploy do |deploy|
   deploy.method = :rsync
