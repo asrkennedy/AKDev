@@ -14,6 +14,7 @@ gem "sass"
 gem "better_errors"
 gem "binding_of_caller"
 gem "middleman-sync", "~> 3.0.12"
+gem "middleman-favicon-maker", "~> 3.2"
 
 gem "middleman-deploy"
 

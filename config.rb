@@ -55,7 +55,7 @@ require 'slim'
 
 activate :directory_indexes
 
-set :build_dir, "tmp"
+set :build_dir, "build"
 
 set :css_dir, 'stylesheets'
 
